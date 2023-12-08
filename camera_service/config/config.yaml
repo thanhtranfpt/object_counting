@@ -1,0 +1,18 @@
+CAMERAS:
+- id: vid_1
+  rtsp: src/video.mp4
+- id: vid_2
+  rtsp: src/video_2.mp4
+CAMERA_FPS: 25
+LOGGER:
+  log_file_path: app.log
+  max_kept_size: 102400
+  max_log_size: 10485760
+NUM_FRAMES_SKIP: 0
+NUM_THREADS: 1
+REDIS_HOSTNAME: localhost
+REDIS_PORT: 6379
+STREAM_MAXLEN: 1
+env_selected: 2
+resized_height: 720
+resized_width: 1280

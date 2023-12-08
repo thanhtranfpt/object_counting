@@ -1,0 +1,36 @@
+CAMERAS:
+- id: vid_1
+  rtsp: src/video.mp4
+- id: vid_2
+  rtsp: src/video_2.mp4
+LINE_IN:
+  vid_1:
+  - - 311
+    - 456
+  - - 735
+    - 401
+  vid_2:
+  - - 518
+    - 427
+  - - 578
+    - 264
+LINE_OUT:
+  vid_1:
+  - - 298
+    - 654
+  - - 330
+    - 716
+  vid_2:
+  - - 0
+    - 0
+  - - 0
+    - 0
+LOGGER:
+  log_file_path: app.log
+  max_kept_size: 102400
+  max_log_size: 10485760
+NUM_THREADS: 1
+REDIS_HOSTNAME: localhost
+REDIS_PORT: 6379
+STREAM_MAXLEN: 1
+env_selected: 2
